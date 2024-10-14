@@ -147,6 +147,8 @@ a {
 .hero__img-large {
   width: 330px;
   height: 540px;
+  margin-right: -6px;
+  z-index: 1;
 }
 
 .hero__img-small {
