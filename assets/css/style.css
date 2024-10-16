@@ -91,6 +91,15 @@ a {
   color: #fff;
 }
 
+/* aos */
+[data-aos] {
+  visibility: hidden;
+}
+
+[data-aos].animate__animated {
+  visibility: visible;
+}
+
 /* =========================== HEADER =================================*/
 .header {
   background: var(--header-bg);
@@ -131,6 +140,10 @@ a {
 
 .header__action--login {
   margin-right: 7px;
+}
+
+.header .logo {
+  animation-iteration-count: infinite;
 }
 
 /* =========================== HERO =================================*/
