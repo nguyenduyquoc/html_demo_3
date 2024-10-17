@@ -175,6 +175,28 @@
     width: 90%;
     margin: 0 auto;
   }
+
+  /* 15. blog */
+  .blog__inner {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .blog__list {
+    order: 1;
+  }
+  .blog__content {
+    order: 2;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog__heading {
+    max-width: 90%;
+    text-align: center;
+  }
 }
 
 /* ================= Table ======================== */
@@ -183,10 +205,4 @@
 
 /* ================= Mobile ======================== */
 @media (max-width: 767.98px) {
-}
-
-.blog,
-.appointment,
-.footer {
-  display: none;
 }
