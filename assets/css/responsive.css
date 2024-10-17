@@ -165,6 +165,16 @@
   .team-item__thumb {
     margin: 0 auto;
   }
+
+  /* 14. install */
+  .install__img {
+    display: none;
+  }
+
+  .install__content {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 /* ================= Table ======================== */
@@ -175,7 +185,6 @@
 @media (max-width: 767.98px) {
 }
 
-.install,
 .blog,
 .appointment,
 .footer {
