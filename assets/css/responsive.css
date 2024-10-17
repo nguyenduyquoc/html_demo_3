@@ -146,6 +146,10 @@
     display: none;
   }
 
+  .about__media {
+    width: 100%;
+  }
+
   .about__img--large {
     width: 100%;
   }
@@ -209,8 +213,133 @@
   .footer__top {
     grid-template-columns: 0.5fr 0.5fr 1fr;
   }
+
+  .show-on-mobile {
+    display: none;
+  }
 }
 
 /* ================= Mobile ======================== */
 @media (max-width: 767.98px) {
+  .section-heading {
+    font-size: 3rem;
+  }
+
+  /* 1. header */
+  .header__action {
+    display: none;
+  }
+
+  .menu-header-icon {
+    top: 16px;
+  }
+
+  .menu-drawer {
+    inset: 0 20% 0 0;
+    padding: 20px;
+  }
+
+  .separate {
+    margin-top: 10px;
+    border-top: 1.5px solid #8c8b8b;
+  }
+
+  /* 2. hero */
+
+  .hero {
+    row-gap: 20px;
+  }
+
+  .hero__img-small {
+    display: none;
+  }
+
+  .hero__media {
+    width: 100%;
+  }
+
+  .hero__img-large {
+    width: 100%;
+    height: auto;
+  }
+  .hero__content {
+    margin: 0;
+  }
+
+  .hero__heading {
+    font-size: 3rem;
+  }
+
+  .hero__row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  /* 3. service */
+  .service {
+    padding: 70px 0;
+  }
+
+  /* 4. work */
+  .work {
+    padding: 70px 0;
+  }
+  .work__desc {
+    width: 100%;
+  }
+
+  .work-item {
+    padding: 20px;
+  }
+
+  /* 5. about */
+  .about {
+    padding: 40px 0;
+    margin: 20px 0;
+  }
+
+  .about__content {
+    padding: 0;
+  }
+
+  .about__content .section-heading {
+    font-size: 3rem;
+  }
+
+  /* 6.team  */
+  .team__list {
+    grid-template-columns: 1fr;
+  }
+
+  /* 7.install */
+  .install {
+    margin-top: 55px;
+  }
+
+  .install__inner {
+    padding: 38px 0;
+    height: auto;
+  }
+
+  /* 8. blog */
+
+  .blog__list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  /* 9. appointment */
+  .appointment__inner {
+    padding: 20px 0;
+  }
+
+  /* 10. footer-top */
+  .footer__top {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .footer__copyright {
+    margin-top: 20px;
+  }
 }
