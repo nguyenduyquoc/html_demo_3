@@ -1,0 +1,56 @@
+/* ================= PC ======================== */
+@media (min-width: 992px) {
+}
+
+/* ================= Tablet and mobile ======================== */
+@media (max-width: 991.98px) {
+  /* 1. ẩn navbar */
+  .navbar {
+    display: none;
+  }
+
+  /* 2. định vị logo bên trong phần tử header-top ở chính giữa màn hình */
+  .header-top {
+    position: relative;
+  }
+  .header-top .logo {
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%; /* di chuyển logo ngược lại 50% kích thước của chính nó theo cả trục X và trục Y*/
+  }
+
+  /* 3. căn chỉnh lại vị trí của menu icon ở header */
+  .menu-header-icon {
+    position: absolute;
+    top: 38px;
+    left: 26px;
+    color: #fff;
+    width: 24px;
+  }
+
+  /* 4. overlay */
+  .menu-overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.03);
+    inset: 0; /* cách đều 4 hướng 0px */
+    z-index: 1;
+    /* bình thường thì ẩn overlay đi */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+
+  /* 5. kiểm tra menu-checkbox có được  chọn hay chưa */
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* ================= Table ======================== */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* ================= Mobile ======================== */
+@media (max-width: 767.98px) {
+}

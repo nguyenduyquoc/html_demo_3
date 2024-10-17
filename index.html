@@ -102,6 +102,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <title>Shine Smile</title>
   </head>
   <body>
@@ -175,6 +177,35 @@
         <!-- end hero -->
       </div>
     </header>
+
+    <!-- start tablet & mobile header -->
+    <div class="mobile-header">
+      <!-- start menu -->
+      <input
+        type="checkbox"
+        name="menu-checkbox"
+        id="menu-checkbox"
+        class="menu-checkbox"
+        hidden
+      />
+      <label for="menu-checkbox">
+        <svg
+          class="menu-header-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path
+            fill="currentColor"
+            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </label>
+      <!-- overlay -->
+      <label for="menu-checkbox" class="menu-overlay"></label>
+
+      <!-- end menu -->
+    </div>
+    <!-- start tablet & mobile header -->
     <!-- end header -->
 
     <!-- start main -->
