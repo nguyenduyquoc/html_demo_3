@@ -109,6 +109,27 @@
   .hero__row {
     justify-content: center;
   }
+
+  /* 10. service */
+  .service__row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .service__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .service__list {
+    text-align: center;
+  }
+
+  .service-item {
+    width: 90%;
+    margin: 0 auto;
+    text-align: start;
+  }
 }
 
 /* ================= Table ======================== */
