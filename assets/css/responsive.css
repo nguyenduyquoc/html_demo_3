@@ -136,6 +136,25 @@
     grid-template-columns: repeat(1, 1fr);
     row-gap: 30px;
   }
+
+  /* 12. about */
+  .about-row {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .about__img--small {
+    display: none;
+  }
+
+  .about__img--large {
+    width: 100%;
+  }
+
+  .about__content {
+    width: 100%;
+    padding: 0 24px;
+    text-align: center;
+  }
 }
 
 /* ================= Table ======================== */
@@ -146,7 +165,6 @@
 @media (max-width: 767.98px) {
 }
 
-.about,
 .team,
 .install,
 .blog,
