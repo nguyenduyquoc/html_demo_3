@@ -1,5 +1,8 @@
 /* ================= PC ======================== */
 @media (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
 }
 
 /* ================= Tablet and mobile ======================== */
@@ -31,7 +34,7 @@
   /* 4. overlay */
   .menu-overlay {
     position: fixed;
-    background: rgba(0, 0, 0, 0.03);
+    background: rgba(0, 0, 0, 0.05);
     inset: 0; /* cách đều 4 hướng 0px */
     z-index: 1;
     /* bình thường thì ẩn overlay đi */
@@ -40,10 +43,50 @@
     transition: 0.5s;
   }
 
-  /* 5. kiểm tra menu-checkbox có được  chọn hay chưa */
+  /* 5. kiểm tra menu-checkbox có được chọn hay chưa */
   .menu-checkbox:checked ~ .menu-overlay {
     opacity: 1;
     visibility: visible;
+  }
+
+  /* 6. menu-drawer */
+  .menu-drawer {
+    position: fixed;
+    background: #2e1919;
+    inset: 0 40% 0 0;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    padding: 40px;
+  }
+  /* 7. kiểm tra nếu checkbox được check hiện menu */
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+
+  /* 8. menu top */
+  .close-menu {
+    width: 24px;
+    color: #fff;
+  }
+
+  .menu-drawer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #navbar-mobile {
+    margin-top: 25px;
+  }
+
+  .navbar__link {
+    display: block;
+    font-size: 2rem;
+  }
+
+  .navbar__link:hover {
+    background-color: #00ffff37;
   }
 }
 
